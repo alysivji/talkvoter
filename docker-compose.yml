@@ -22,7 +22,6 @@ services:
        context: .
        dockerfile: Dockerfile
      command: /app/docker-utils/run.sh
-     container_name: myapp
      volumes:
        - .:/app/proj/
        - static-volume:/app/htdocs/static/
