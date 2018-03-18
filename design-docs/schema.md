@@ -8,7 +8,7 @@
 |`title`|
 |`description`|Talk abstract from website
 |`presenters`|
-|`full_text`|Full talk text extracted from YouTube closed captioning
+|`transcript`|Full talk transcript extracted from YouTube closed captioning
 |`created`|Metadata
 |`modified`|Metadata
 
