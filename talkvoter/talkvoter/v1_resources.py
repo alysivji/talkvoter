@@ -5,7 +5,6 @@ from flask_login import login_required
 from flask import Blueprint, abort
 from flask_login import current_user
 from sqlalchemy.sql.expression import func
-from sqlalchemy import distinct
 from marshmallow import ValidationError
 from .models import db, Talk, Vote
 from .serializers import VoteSchema, TalkSchema
