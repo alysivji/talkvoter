@@ -21,8 +21,7 @@ services:
      build:
        context: ./
        dockerfile: talkvoter/Dockerfile
-    #  command: /app/docker-utils/run-app.sh
-     command: ["gunicorn", "talkvoter.app:application", "-b", "0.0.0.0:8000", "--workers", "2", "--reload", "--timeout",  "100000"]
+     command: /app/docker-utils/run-app.sh
      volumes:
        - .:/app/proj/
        - static-volume:/app/htdocs/static/
@@ -30,6 +29,7 @@ services:
        - DATABASE_URL=postgres://postgres@db/postgres
        - SITE_DIR=/app/
        - SECRET_KEY=super secret key
+       - PREDICT_HOST=predict:8000
      networks:
        - talkvoter_net
      depends_on:
