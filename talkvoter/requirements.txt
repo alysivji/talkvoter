@@ -15,6 +15,7 @@ toastedmarshmallow==0.2.6
 webargs==2.0.0
 Werkzeug==0.14.1
 WTForms==2.1
+gunicorn
 ipython
 pdbpp
 pytest
